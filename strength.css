@@ -1,0 +1,65 @@
+/* Основни стилове за страницата "Сила и мускули" */
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.banner {
+    position: page;
+    width: 100%;
+    max-height: 360px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.6);
+}
+
+.page-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.content h2 {
+    color: #28a745;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #28a745;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+}
+
+.content ul {
+
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.content ul li {
+    color: #28a745;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}

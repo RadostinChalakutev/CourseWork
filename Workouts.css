@@ -1,0 +1,71 @@
+/* Стилове за workouts.html */
+
+body {
+    background-color: #f6f8fa;
+    color: #333;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: #28a745;
+}
+
+.workout-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.workout-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.workout-card:hover {
+    transform: translateY(-5px);
+}
+
+.workout-card img {
+    width: %;
+    height: 180px;
+    object-fit: cover;
+}
+
+.workout-card-content {
+    padding: 1.5rem;
+}
+
+.workout-card-content h3 {
+    margin-top: 0;
+    color: #28a745;
+    font-size: 1.5rem;
+}
+
+.workout-card-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #1e7e34;
+}

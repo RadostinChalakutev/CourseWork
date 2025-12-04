@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тренировъчни програми – FitLife</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="Workouts.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container">
-    <a href="mainPage.html" class="logo">
-      <img src="../images/logo.png" alt="Лого" class="logo-img">
-      <span class="site-title">FitLife Bulgaria</span>
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Лого на сайта" class="logo-img">
+      <span class="site-title">FitLife</span>
     </a>
     <nav class="site-nav">
-      <button class="nav-toggle">☰</button>
       <ul class="nav-list">
-        <li><a href="mainPage.html">Начало</a></li>
-        <li><a href="AboutUs.html">За нас</a></li>
+        <li><a href="index.html">Начало</a></li>
         <li><a href="Workouts.html">Тренировки</a></li>
+
+        <li><a href="AboutUs.html">За нас</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="container content">
-  <h2>Нашите програми</h2>
-  <ul>
-    <li><a href="beginner.html">🏋️ Фитнес за начинаещи</a></li>
-    <li><a href="strength.html">💪 Сила & Мускули</a></li>
-    <li><a href="cardio.html">🏃 Кардио & Стречинг</a></li>
-  </ul>
+<main>
+  <h2 class="page-title">Тренировъчни програми</h2>
+
+  <section class="workout-section">
+    <div class="workout-card">
+      <img src="strength.jpg " alt="Сила и мускули">
+      <div class="workout-card-content">
+        <h3>Сила и мускули</h3>
+        <p>Програма, насочена към изграждане на сила, маса и издръжливост чрез тежести и прогресивно натоварване.</p>
+        <a href="strength.html" class="read-more">Прочети повече</a>
+      </div>
+    </div>
+
+    <div class="workout-card">
+      <img src="cardio.jpg" alt="Кардио и издръжливост">
+      <div class="workout-card-content">
+        <h3>Кардио</h3>
+        <p>За изгаряне на мазнини, подобряване на сърдечно-съдовото здраве и повишаване на издръжливостта.</p>
+        <a href="cardio.html" class="read-more">Прочети повече</a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2025 FitLife Bulgaria. Всички права запазени.</p>
+    <p>&copy; 2025 FitLife. Всички права запазени.</p>
   </div>
 </footer>
-<script src="interacton"></script>
+
+<script src="interaction.js"></script>
 </body>
 </html>
