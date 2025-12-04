@@ -34,7 +34,7 @@ body {
 }
 
 .workout-card img {
-    width: %;
+    width: 90%;
     height: 180px;
     object-fit: cover;
 }
