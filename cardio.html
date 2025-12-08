@@ -1,67 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-        <html lang="bg">
-        <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Сила & Мускули – FitLife</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Здравословен начин на живот – FitLife Hub</title>
+    <meta name="description" content="Основни принципи за хранене, сън и навици за по-здравословен живот.">
+    <meta name="keywords" content="здраве, начин на живот, хранене, сън, възстановяване">
+    <meta name="author" content="FitLife Hub">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="site-header">
-    <div class="container">
-        <a href="../index.html" class="logo">
-            <img src="../images/logo.png" alt="Лого" class="logo-img">
-            <span class="site-title">FitLife Bulgaria</span>
+<header class="header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Лого на FitLife Hub">
+            <span>FitLife <span class="logo-span-strong">Hub</span></span>
         </a>
-        <nav class="site-nav">
-            <button class="nav-toggle">☰</button>
-            <ul class="nav-list">
-                <li><a href="../index.html">Начало</a></li>
-                <li><a href="../about.html">За нас</a></li>
-                <li><a href="index.html">Тренировки</a></li>
-            </ul>
+        <nav class="nav" aria-label="Основна навигация">
+            <button class="theme-toggle" type="button" aria-label="Превключване на тема">
+                Dark mode
+            </button>
+            <button class="burger" type="button" aria-label="Отваряне на менюто">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="workouts.html">Тренировки</a></li>
+                    <li><a href="strenght.html">Сила</a></li>
+                    <li><a href="cardio.html">Кардио</a></li>
+                    <li><a href="health.html" class="active">Здраве</a></li>
+                    <li><a href="aboutUs.html">За нас</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
 </header>
 
-<main class="container content">
-    <section>
-        <h2>Сила & Мускули</h2>
-        <p>Програмата <strong>„Сила & Мускули“</strong> е предназначена за хора, които искат да изградят стабилна мускулна маса, да подобрят физическата си сила и да изваят функционално и атлетично тяло.</p>
+<main>
+    <section class="section">
+        <div class="container">
+            <div class="page-hero reveal">
+                <p class="section-kicker">Здравословни навици</p>
+                <h1>Малки промени, дългосрочни резултати</h1>
+                <p>
+                    Здравословният начин на живот не означава крайни диети или перфектност.
+                    Важни са последователните и реалистични навици, които можеш да поддържаш.
+                </p>
+            </div>
 
-        <h3>Какво включва:</h3>
-        <ul>
-            <li>3-5 тренировки седмично</li>
-            <li>Базови упражнения: клек, тяга, лежанка, военна преса и др.</li>
-            <li>Техники за мускулна хипертрофия</li>
-            <li>Следене на прогреса и адаптивен план</li>
-        </ul>
-
-        <h3>Подходяща за:</h3>
-        <ul>
-            <li>Средно напреднали и напреднали</li>
-            <li>Хора, желаещи повече сила и мускулен растеж</li>
-        </ul>
-
-        <a href="index.html" class="btn">← Назад към всички програми</a>
+            <div class="grid-3 mt-sm">
+                <article class="card reveal">
+                    <h3>Хранене</h3>
+                    <p>
+                        Стреми се към балансирано меню с достатъчно протеин, зеленчуци и
+                        сложни въглехидрати. Избягвай крайности и „магически“ диети.
+                    </p>
+                    <ul class="list-check">
+                        <li><span>✓</span> Повече цели, необработени храни</li>
+                        <li><span>✓</span> Достатъчно вода през деня</li>
+                    </ul>
+                </article>
+                <article class="card reveal">
+                    <h3>Сън и възстановяване</h3>
+                    <p>
+                        7–9 часа сън са важни както за здравето, така и за растежа на мускулите
+                        и енергията през деня.
+                    </p>
+                    <ul class="list-check">
+                        <li><span>✓</span> Опитай да заспиваш и ставаш по едно и също време</li>
+                        <li><span>✓</span> Ограничаване на екрани преди сън</li>
+                    </ul>
+                </article>
+                <article class="card reveal">
+                    <h3>Стрес и движение</h3>
+                    <p>
+                        Леко движение всеки ден и кратки моменти за релакс могат да намалят стреса.
+                    </p>
+                    <ul class="list-check">
+                        <li><span>✓</span> Кратка разходка или лек стречинг</li>
+                        <li><span>✓</span> Дихателни упражнения или медитация</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
     </section>
 </main>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; 2025 FitLife Bulgaria. Всички права запазени.</p>
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>© 2025 FitLife Hub. Проект за университетска курсова работа.</p>
+        <div class="footer-links">
+            <a href="workouts.html">Тренировки</a>
+            <a href="aboutUs.html">За нас</a>
+        </div>
     </div>
 </footer>
-<script src="../js/scripts.js"></script>
-</body>
-</html>
-</title>
-</head>
-<body>
 
+<script src="js/script.js" defer></script>
 </body>
 </html>

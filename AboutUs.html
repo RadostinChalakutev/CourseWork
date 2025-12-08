@@ -1,59 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-        <html lang="bg">
-        <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>За нас – FitLife Bulgaria</title>
-    <link rel="stylesheet" href="style.css">
+    <title>За нас – FitLife Hub</title>
+    <meta name="description" content="Информация за проекта FitLife Hub и контактна форма.">
+    <meta name="keywords" content="за нас, екип, фитнес сайт, контакт">
+    <meta name="author" content="FitLife Hub">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="site-header">
-    <div class="container">
-        <h1 class="site-title">FitLife Bulgaria</h1>
-        <nav class="site-nav">
-            <button class="nav-toggle" aria-label="отвори меню">☰</button>
-            <ul class="nav-list">
-                <li><a href="index.html">Начало</a></li>
-                <li><a href="AboutUs.html">За нас</a></li>
-                <li><a href="Workouts.html">Тренировки</a></li>
-            </ul>
+<header class="header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Лого на FitLife Hub">
+            <span>FitLife <span class="logo-span-strong">Hub</span></span>
+        </a>
+        <nav class="nav" aria-label="Основна навигация">
+            <button class="theme-toggle" type="button" aria-label="Превключване на тема">
+                Dark mode
+            </button>
+            <button class="burger" type="button" aria-label="Отваряне на менюто">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="workouts.html">Тренировки</a></li>
+                    <li><a href="strenght.html">Сила</a></li>
+                    <li><a href="cardio.html">Кардио</a></li>
+                    <li><a href="health.html">Здраве</a></li>
+                    <li><a href="aboutUs.html" class="active">За нас</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
 </header>
 
-<main class="container content">
-    <section>
-        <h2>Нашата мисия</h2>
-        <p>В FitLife вярваме, че здравето и добрата физическа форма са достъпни за всеки. Нашата цел е да вдъхновим хората да живеят по‑активно и да постигнат баланс между тяло и дух.</p>
-    </section>
+<main>
+    <section class="section">
+        <div class="container">
+            <div class="page-hero reveal">
+                <p class="section-kicker">За проекта</p>
+                <h1>FitLife Hub – учебен проект, вдъхновен от реалния живот</h1>
+                <p>
+                    Този сайт е създаден като университетска курсова работа с цел да демонстрира
+                    работа с HTML5, CSS3, JavaScript и responsive дизайн. Съдържанието е с информативна
+                    цел и не замества професионална консултация.
+                </p>
+            </div>
 
-    <section>
-        <h2>Екип</h2>
-        <p>Нашите треньори са квалифицирани професионалисти с дългогодишен опит и индивидуален подход към всеки клиент.</p>
-    </section>
+            <h2 class="section-title reveal">Кой стои зад проекта?</h2>
+            <div class="team-grid">
+                <article class="team-card reveal">
+                    <img src="images/team-gym.jpg" alt="Треньор във фитнес зала">
+                    <div>
+                        <h3>FitLife Student</h3>
+                        <p class="section-subtitle">
+                            Студент по информатика, с интерес към фитнес, уеб технологии и личностно развитие.
+                        </p>
+                    </div>
+                </article>
+                <article class="team-card reveal">
+                    <img src="images/team-gym.jpg" alt="Консултант по фитнес">
+                    <div>
+                        <h3>Fitness Inspiration</h3>
+                        <p class="section-subtitle">
+                            Ролята му/ѝ е вдъхновение – истинските треньори и специалисти по хранене
+                            остават хората, към които трябва да се обръщаш за персонални съвети.
+                        </p>
+                    </div>
+                </article>
+            </div>
 
-    <section>
-        <h2>Как работим</h2>
-        <p>Започваме с оценка на физическата подготовка, индивидуален план, подкрепа и постепенен прогрес. Предлагаме както лични, така и групови тренировки.</p>
+            <div class="form-card reveal">
+                <h2 class="section-title">Свържи се с нас (демо форма)</h2>
+                <p class="section-subtitle">
+                    Формата по-долу е пример за front-end валидация на JavaScript и не изпраща реални имейли.
+                </p>
+
+                <form id="contact-form" novalidate>
+                    <div class="form-row">
+                        <label for="name">Име</label>
+                        <input type="text" id="name" name="name" placeholder="Въведи име">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Имейл</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Съобщение</label>
+                        <textarea id="message" name="message" placeholder="Какво би искал да ни кажеш?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Изпрати съобщение</button>
+                </form>
+            </div>
+        </div>
     </section>
 </main>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; 2025 FitLife Bulgaria. Всички права запазени.</p>
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>© 2025 FitLife Hub. Проект за университетска курсова работа.</p>
+        <div class="footer-links">
+            <a href="index.html">Начало</a>
+            <a href="Workouts.html">Тренировки</a>
+        </div>
     </div>
 </footer>
 
-<script src="interaction.js"></script>
-</body>
-</html>
-</title>
-</head>
-<body>
-
+<script src="script" defer></script>
 </body>
 </html>
