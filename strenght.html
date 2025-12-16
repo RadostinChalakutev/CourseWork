@@ -8,19 +8,19 @@
     <meta name="author" content="FitLife Hub">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="strength.css">
+
 </head>
 <body>
 <header class="header">
     <div class="container header-inner">
         <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="Лого на FitLife Hub">
+            <img src="logo.png" alt="Лого на FitLife Hub">
             <span>FitLife <span class="logo-span-strong">Hub</span></span>
         </a>
         <nav class="nav" aria-label="Основна навигация">
-            <button class="theme-toggle" type="button" aria-label="Превключване на тема">
-                Dark mode
-            </button>
+
             <button class="burger" type="button" aria-label="Отваряне на менюто">
                 <span></span>
                 <span></span>
@@ -29,11 +29,8 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Начало</a></li>
-                    <li><a href="workouts.html">Тренировки</a></li>
-                    <li><a href="strenght.html" class="active">Сила</a></li>
-                    <li><a href="cardio.html">Кардио</a></li>
-                    <li><a href="health.html">Здраве</a></li>
-                    <li><a href="aboutUs.html">За нас</a></li>
+                    <li><a href="Workouts.html">Тренировки</a></li>
+                    <li><a href="AboutUs.html">За нас</a></li>
                 </ul>
             </div>
         </nav>
@@ -43,94 +40,117 @@
 <main>
     <section class="section">
         <div class="container">
-            <div class="page-hero reveal">
-                <p class="section-kicker">Силови тренировки</p>
-                <h1>Основи на силовата тренировка</h1>
-                <p>
-                    Силовите тренировки развиват мускулна маса, сила и стабилност. Фокусът е върху
-                    контролирано изпълнение, прогресивно натоварване и добро възстановяване.
-                </p>
-            </div>
 
-            <h2 class="section-title reveal">Примерен план – цяло тяло (3 пъти седмично)</h2>
+            <h2 class="section-title reveal">Серии и повторения за упражненията</h2>
             <p class="section-subtitle reveal">
-                Подходящ за начинаещи до средно напреднали. Тренира се през ден (например понеделник, сряда, петък).
+                Посочените стойности са примерни и могат да бъдат адаптирани според
+                тренировъчния опит, целите и индивидуалното възстановяване.
             </p>
 
-            <div class="mt-sm">
-                <table class="plan-table reveal">
-                    <thead>
-                    <tr>
-                        <th>Упражнение</th>
-                        <th>Мускулна група</th>
-                        <th>Серии</th>
-                        <th>Повторения</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Клек с щанга / гоблет клек</td>
-                        <td>Бедра, седалище</td>
-                        <td>3</td>
-                        <td>6–10</td>
-                    </tr>
-                    <tr>
-                        <td>Лежанка с щанга / дъмбели</td>
-                        <td>Гърди, трицепс</td>
-                        <td>3</td>
-                        <td>6–10</td>
-                    </tr>
-                    <tr>
-                        <td>Гребане с щанга или дъмбел</td>
-                        <td>Гръб, бицепс</td>
-                        <td>3</td>
-                        <td>8–12</td>
-                    </tr>
-                    <tr>
-                        <td>Раменна преса</td>
-                        <td>Рамене</td>
-                        <td>3</td>
-                        <td>8–12</td>
-                    </tr>
-                    <tr>
-                        <td>Планк</td>
-                        <td>Кор</td>
-                        <td>3</td>
-                        <td>30–45 сек.</td>
-                    </tr>
-                    </tbody>
-                </table>
+            <div class="grid-3 mt-lg">
+
+                <!-- FULL BODY -->
+                <article class="card reveal">
+                    <h3>Full Body Split</h3>
+                    <ul>
+                        <li><strong>Клек с щанга:</strong> 3–4 серии × 6–10 повторения</li>
+                        <li><strong>Лежанка:</strong> 3 серии × 6–10 повторения</li>
+                        <li><strong>Гребане:</strong> 3 серии × 8–12 повторения</li>
+                        <li><strong>Раменна преса:</strong> 3 серии × 8–12 повторения</li>
+                        <li><strong>Планк:</strong> 3 серии × 30–45 сек.</li>
+                    </ul>
+                </article>
+
+                <!-- UPPER / LOWER -->
+                <article class="card reveal">
+                    <h3>Upper / Lower Split</h3>
+
+                    <p><strong>Горна част (Upper):</strong></p>
+                    <ul>
+                        <li><strong>Лежанка:</strong> 4 серии × 6–8 повторения</li>
+                        <li><strong>Набирания / скрипец:</strong> 4 серии × 8–10 повторения</li>
+                        <li><strong>Раменна преса:</strong> 3 серии × 8–10 повторения</li>
+                        <li><strong>Гребане:</strong> 3 серии × 8–12 повторения</li>
+                        <li><strong>Сгъване за бицепс:</strong> 3 серии × 10–12 повторения</li>
+                    </ul>
+
+                    <p><strong>Долна част (Lower):</strong></p>
+                    <ul>
+                        <li><strong>Клек:</strong> 4 серии × 5–8 повторения</li>
+                        <li><strong>Румънска тяга:</strong> 3 серии × 6–10 повторения</li>
+                        <li><strong>Напади:</strong> 3 серии × 10–12 повторения</li>
+                        <li><strong>Лег преса:</strong> 3 серии × 10–12 повторения</li>
+                        <li><strong>Прасци:</strong> 4 серии × 12–15 повторения</li>
+                    </ul>
+                </article>
+
+                <!-- PPL -->
+                <article class="card reveal">
+                    <h3>Push / Pull / Legs (PPL)</h3>
+
+                    <p><strong>Push:</strong></p>
+                    <ul>
+                        <li><strong>Лежанка:</strong> 4 серии × 6–8 повторения</li>
+                        <li><strong>Раменна преса:</strong> 3 серии × 8–10 повторения</li>
+                        <li><strong>Флайс:</strong> 3 серии × 10–12 повторения</li>
+                        <li><strong>Трицепс:</strong> 3 серии × 10–12 повторения</li>
+                    </ul>
+
+                    <p><strong>Pull:</strong></p>
+                    <ul>
+                        <li><strong>Мъртва тяга:</strong> 4 серии × 3–5 повторения</li>
+                        <li><strong>Набирания:</strong> 4 серии × 6–10 повторения</li>
+                        <li><strong>Гребане:</strong> 3 серии × 8–12 повторения</li>
+                        <li><strong>Бицепс:</strong> 3 серии × 10–12 повторения</li>
+                    </ul>
+
+                    <p><strong>Legs:</strong></p>
+                    <ul>
+                        <li><strong>Клек:</strong> 4 серии × 5–8 повторения</li>
+                        <li><strong>Лег преса:</strong> 3 серии × 10–12 повторения</li>
+                        <li><strong>Задно бедро:</strong> 3 серии × 10–12 повторения</li>
+                        <li><strong>Прасци:</strong> 4 серии × 12–15 повторения</li>
+                    </ul>
+                </article>
+
             </div>
 
-            <h2 class="section-title mt-lg reveal">Принципи за прогрес</h2>
-            <div class="grid-3 mt-sm">
+            <div class="grid-3 mt-lg">
+
+                <!-- STRENGTH FOCUSED -->
                 <article class="card reveal">
-                    <h3>Прогресивно претоварване</h3>
-                    <p>Увеличавай постепенно тежестта, сериите или повторенията, когато упражнението стане лесно.</p>
+                    <h3>Strength-Oriented Split</h3>
+
+                    <p><strong>Основни упражнения:</strong></p>
+                    <ul>
+                        <li><strong>Клек:</strong> 5 серии × 3–5 повторения</li>
+                        <li><strong>Лежанка:</strong> 5 серии × 3–5 повторения</li>
+                        <li><strong>Мъртва тяга:</strong> 3–4 серии × 2–5 повторения</li>
+                    </ul>
+
+                    <p><strong>Аксесоарни упражнения:</strong></p>
+                    <ul>
+                        <li><strong>Гребане:</strong> 3 серии × 6–8 повторения</li>
+                        <li><strong>Раменна преса:</strong> 3 серии × 6–8 повторения</li>
+                        <li><strong>Хип тръст:</strong> 3 серии × 8–10 повторения</li>
+                        <li><strong>Кор:</strong> 3 серии × 30–45 сек.</li>
+                    </ul>
                 </article>
-                <article class="card reveal">
-                    <h3>Правилна техника</h3>
-                    <p>По-добре по-малко тежест с добра техника, отколкото голяма тежест с риск от травма.</p>
-                </article>
-                <article class="card reveal">
-                    <h3>Възстановяване</h3>
-                    <p>Сън, хранене и почивка между тренировките са ключови за растеж на мускулите.</p>
-                </article>
+
             </div>
+
         </div>
     </section>
+
 </main>
 
 <footer class="footer">
     <div class="container footer-inner">
-        <p>© 2025 FitLife Hub. Проект за университетска курсова работа.</p>
-        <div class="footer-links">
-            <a href="workouts.html">Всички тренировки</a>
-            <a href="health.html">Здравословни навици</a>
-        </div>
+        <p>© 2025 FitLife </p>
+
     </div>
 </footer>
 
-<script src="js/script.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>

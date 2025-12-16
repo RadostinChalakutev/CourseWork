@@ -4,17 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тренировки | FitLife</title>
-
-  <!-- Основен CSS -->
-  <link rel="stylesheet" href="base.css">
-
-  <!-- Workout специфичен CSS -->
   <link rel="stylesheet" href="Workouts.css">
+  <link rel="stylesheet" href="base.css">
 </head>
 
 <body>
-
-<!-- ================= HEADER ================= -->
 <header class="header">
   <div class="container header-inner">
 
@@ -26,10 +20,11 @@
     <nav class="nav-links">
       <ul>
         <li><a href="index.html">Начало</a></li>
-        <li><a href="workouts.html" class="active">Тренировки</a></li>
-        <li><a href="aboutUs.html">За нас</a></li>
+        <li><a href="Workouts.html" class="active">Тренировки</a></li>
+        <li><a href="AboutUs.html">За нас</a></li>
       </ul>
     </nav>
+
 
     <div class="burger">
       <span></span><span></span><span></span>
@@ -37,46 +32,61 @@
   </div>
 </header>
 
-
-
-<!-- ================= HERO / HEADER SECTION ================= -->
 <section class="workout-header reveal">
   <h1>Тренировъчни програми</h1>
   <p>Открий силови, кардио и функционални тренировки за всяко ниво — от начинаещи до напреднали.</p>
 </section>
 
+<section class="workout-visuals container reveal">
+ <a href="strenght.html" class="visual-card">
+   <img src="howtodeadlift1.jpg" alt="Силови тренировки">
+   <h3>Силови тренировки</h3>
+ </a>
 
+  <a href="cardio.html" class="visual-card">
+    <img src="Man-working-out-on-a-bike.jpg" alt="Кардио тренировки">
+    <h3>Кардио тренировки</h3>
+  </a>
+  <a href="health.html" class="visual-card">
+    <img src="hispanic-man-lifting-kettlebell-in-a-gym-royalty-free-image-1694424425.avif" alt=" Функционални тренировки">
+    <h3>Функционални тренировки</h3>
+  </a>
 
-<!-- ================= CATEGORY NAV ================= -->
-<div class="workout-nav reveal">
-  <a href="strenght.html">Сила</a>
-  <a href="cardio.html">Кардио</a>
-  <a href="health.html">Здраве</a>
-</div>
-
-
-
-<!-- ================= EXERCISES GRID ================= -->
-<section class="container">
-  <div id="exercise-list" class="reveal">
-    <!-- JS V2 ще създаде картите тук -->
-  </div>
 </section>
 
+<section class="workout-info container">
+  <h2>Как да избереш правилния тип тренировка?</h2>
 
+  <p>
+    Всеки тип тренировка има своята роля в изграждането на здраво,
+    функционално и балансирано тяло. Изборът между силови, кардио
+    или функционални тренировки зависи от твоите цели, физическо
+    състояние и ниво на подготовка.
+  </p>
 
-<!-- ================= FOOTER ================= -->
+  <p>
+    Силовите тренировки подпомагат увеличаването на мускулната маса,
+    силата и стабилността на тялото. Те са основа за подобряване на
+    стойката и предпазване от травми. Кардио тренировките развиват
+    сърдечно-съдовата система, подобряват издръжливостта и спомагат
+    за ефективното изгаряне на мазнини.
+  </p>
+
+  <p>
+    Функционалните и здравословни тренировки комбинират движения,
+    които подобряват координацията, мобилността и цялостното
+    качество на движение. Те са подходящи за всички възрасти и
+    нива и допълват отлично всяка тренировъчна програма.
+  </p>
+</section>
+
 <footer class="footer">
   <div class="container footer-inner">
     <p>© 2025 FitLife. Всички права запазени.</p>
 
-    <button class="theme-toggle">Dark mode</button>
   </div>
 </footer>
 
-
-
-<!-- ================= JAVASCRIPT ================= -->
 <script src="script.js"></script>
 
 </body>

@@ -1,148 +1,50 @@
-/* ================================================
-   Workout Page Styles — FitLife
-   Модерен, премиум, тъмен дизайн
-================================================= */
+/* =====================================================
+   SPLIT HEADINGS — по-разпознаваеми заглавия
+===================================================== */
 
-/* Основен контейнер */
-.workout-header {
-    text-align: center;
-    padding: 2.8rem 0 1.5rem;
-}
-
-.workout-header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.6rem;
-}
-
-.workout-header p {
-    opacity: 0.8;
-    max-width: 620px;
-    margin: 0 auto;
-}
-
-/* ================================================
-   Навигация за подкатегории (Strength, Cardio, Health)
-================================================= */
-
-.workout-nav {
-    margin: 2rem auto;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.workout-nav a {
-    padding: 0.7rem 1.3rem;
-    background: var(--bg2);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: var(--radius);
-    color: var(--text);
-    font-size: 0.95rem;
-    transition: 0.25s ease;
-}
-
-.workout-nav a:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-}
-
-/* Активен линк (ако решиш да го ползваш) */
-.workout-nav a.active {
-    border-color: var(--accent);
-    background: rgba(10, 255, 157, 0.1);
-    color: var(--accent);
-}
-
-/* ================================================
-   Grid за упражнения
-================================================= */
-
-#exercise-list {
-    margin-top: 2rem;
-    display: grid;
-    gap: 1.7rem;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-/* ================================================
-   Карта за упражнение
-================================================= */
-
-.exercise-card {
-    background: var(--bg2);
-    padding: 1.6rem;
-    border-radius: var(--radius);
-    box-shadow: 0 8px 22px var(--shadow);
-    border: 1px solid rgba(255,255,255,0.06);
-    transition: 0.25s ease;
-    opacity: 0;                 /* за reveal */
-    transform: translateY(20px);/* за reveal */
-}
-
-/* Reveal активирано */
-.exercise-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.exercise-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--accent);
-    box-shadow: 0 18px 36px rgba(0,0,0,0.5);
-}
-
-/* Заглавие + badge */
-.exercise-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.6rem;
-}
-
-.exercise-title {
-    font-size: 1.1rem;
+.card h3 {
+    position: relative;
+    padding: 0.6rem 0.8rem 0.6rem 2.4rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.35rem;
     font-weight: 600;
+    color: var(--white);
+    background: linear-gradient(
+            90deg,
+            rgba(10,255,157,0.15),
+            rgba(10,255,157,0.02)
+    );
+    border-radius: 10px;
 }
 
-/* Badge (тип упражнение) */
-.badge {
-    padding: 0.3rem 0.6rem;
-    background: rgba(10,255,157,0.12);
-    border: 1px solid var(--accent);
-    border-radius: 6px;
-    color: var(--accent);
-    font-size: 0.75rem;
+/* Accent линия отляво */
+.card h3::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 60%;
+    background: var(--accent);
+    border-radius: 4px;
 }
 
-/* Метаданни (ниво + серии) */
-.exercise-meta {
-    opacity: 0.75;
-    margin-bottom: 0.8rem;
-}
-
-/* Описание */
-.exercise-card p:last-child {
+/* Лека икона (универсална) */
+.card h3::after {
+    content: "🏋️";
+    position: absolute;
+    left: 1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
     opacity: 0.85;
-    line-height: 1.5;
 }
 
-/* ================================================
-   Responsive оптимизации
-================================================= */
-
-@media (min-width: 768px) {
-    .workout-header h1 {
-        font-size: 2.3rem;
-    }
-
-    #exercise-list {
-        gap: 2rem;
-    }
-}
-
+/* По-добра четимост на мобилни */
 @media (max-width: 480px) {
-    .workout-nav {
-        gap: 0.6rem;
+    .card h3 {
+        font-size: 1.2rem;
+        padding-left: 2.2rem;
     }
 }
