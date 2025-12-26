@@ -7,18 +7,20 @@
     <meta name="keywords" content="здраве, начин на живот, хранене, сън, възстановяване">
     <meta name="author" content="FitLife Hub">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="cardio.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
     <div class="container header-inner">
         <a href="index.html" class="logo">
-            <img src="logo.png" alt="Лого на FitLife Hub">
+            <img src="images/logo.png" alt="Лого на FitLife Hub">
             <span>FitLife <span class="logo-span-strong">Hub</span></span>
         </a>
         <nav class="nav" aria-label="Основна навигация">
-
+            <button class="theme-toggle" type="button" aria-label="Превключване на тема">
+                Dark mode
+            </button>
             <button class="burger" type="button" aria-label="Отваряне на менюто">
                 <span></span>
                 <span></span>
@@ -27,8 +29,11 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Начало</a></li>
-                    <li><a href="Workouts.html">Тренировки</a></li>
-                    <li><a href="AboutUs.html">За нас</a></li>
+                    <li><a href="workouts.html">Тренировки</a></li>
+                    <li><a href="strenght.html">Сила</a></li>
+                    <li><a href="cardio.html">Кардио</a></li>
+                    <li><a href="health.html" class="active">Здраве</a></li>
+                    <li><a href="aboutUs.html">За нас</a></li>
                 </ul>
             </div>
         </nav>
@@ -40,7 +45,7 @@
         <div class="container">
             <div class="page-hero reveal">
                 <p class="section-kicker">Здравословни навици</p>
-                <h1 class="mini-text" >Малки промени, дългосрочни резултати</h1>
+                <h1>Малки промени, дългосрочни резултати</h1>
                 <p>
                     Здравословният начин на живот не означава крайни диети или перфектност.
                     Важни са последователните и реалистични навици, които можеш да поддържаш.
@@ -87,11 +92,14 @@
 
 <footer class="footer">
     <div class="container footer-inner">
-        <p>© 2025 FitLife. Всички права са запазени</p>
-
+        <p>© 2025 FitLife Hub. Проект за университетска курсова работа.</p>
+        <div class="footer-links">
+            <a href="workouts.html">Тренировки</a>
+            <a href="aboutUs.html">За нас</a>
+        </div>
     </div>
 </footer>
 
-<script src="script.js" defer></script>
+<script src="js/script.js" defer></script>
 </body>
 </html>
