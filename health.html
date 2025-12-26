@@ -1,57 +1,165 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Сила & Мускули – FitLife</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Здравословен начин на живот | FitLife </title>
+
+    <meta name="description" content="Хранене, сън, възстановяване и здравословни навици. Практични насоки за отслабване, поддържане и покачване.">
+    <meta name="keywords" content="здраве, хранене, калории, протеин, сън, възстановяване">
+    <meta name="author" content="FitLife ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="health.css">
 </head>
+
 <body>
-<header class="site-header">
-    <div class="container">
+
+<header class="header">
+    <div class="container header-inner">
         <a href="index.html" class="logo">
-            <img src="logo.png" alt="Лого" class="logo-img">
-            <span class="site-title">FitLife Bulgaria</span>
+            <img src="logo.png" alt="FitLife  лого">
+            <span>FitLife <span class="logo-span-strong">Hub</span></span>
         </a>
-        <nav class="site-nav">
-            <button class="nav-toggle">☰</button>
-            <ul class="nav-list">
-                <li><a href="index.html">Начало</a></li>
-                <li><a href="AboutUs.html">За нас</a></li>
-                <li><a href="Workouts.html">Тренировки</a></li>
-            </ul>
+
+        <nav class="nav">
+
+            <button class="burger">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="Workouts.html">Тренировки</a></li>
+                    <li><a href="AboutUs.html">За нас</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
 </header>
 
-<main class="container content">
-    <section>
-        <h2>Сила & Мускули</h2>
-        <p>Програмата <strong>„Сила & Мускули“</strong> е предназначена за хора, които искат да изградят стабилна мускулна маса, да подобрят физическата си сила и да изваят функционално и атлетично тяло.</p>
+<main>
 
-        <h3>Какво включва:</h3>
-        <ul>
-            <li>3-5 тренировки седмично</li>
-            <li>Базови упражнения: клек, тяга, лежанка, военна преса и др.</li>
-            <li>Техники за мускулна хипертрофия</li>
-            <li>Следене на прогреса и адаптивен план</li>
-        </ul>
+    <!-- HERO -->
+    <div class="container">
+        <div class="page-hero reveal">
+            <h2 class="section-kicker">Здравословни навици</h2>
+            <h1>Малки промени, дългосрочни резултати</h1>
+            <p>
+                Устойчивият начин на живот се изгражда чрез
+                <span class="text-highlight">последователни навици</span>,
+                а не чрез крайности.
+            </p>
+        </div>
+    </div>
 
-        <h3>Подходяща за:</h3>
-        <ul>
-            <li>Средно напреднали и напреднали</li>
-            <li>Хора, желаещи повече сила и мускулен растеж</li>
-        </ul>
+    <!-- ОСНОВНИ НАВИЦИ -->
 
-        <a href="index.html" class="btn">← Назад към всички програми</a>
+        <div class="container">
+            <div class="grid-3 mt-sm">
+
+                <article class="card reveal">
+                    <h3>Хранене</h3>
+                    <p>
+                        Правилното хранене подпомага енергията, възстановяването
+                        и контрола на телесното тегло.
+                    </p>
+                    <ul class="list-check">
+                        <li><span>✓</span> Адекватен прием на протеин</li>
+                        <li><span>✓</span> Минимално обработени храни</li>
+                        <li><span>✓</span> Редовна хидратация</li>
+                    </ul>
+                </article>
+
+                <article class="card reveal">
+                    <h3>Сън и възстановяване</h3>
+                    <p>
+                        Сънят е критичен за хормоналния баланс и мускулния растеж.
+                    </p>
+                    <ul class="list-check">
+                        <li><span>✓</span> 7–9 часа сън</li>
+                        <li><span>✓</span> Постоянен режим</li>
+                        <li><span>✓</span> Ограничаване на екрани вечер</li>
+                    </ul>
+                </article>
+
+                <article class="card reveal">
+                    <h3>Стрес и движение</h3>
+                    <p>
+                        Управлението на стреса подобрява качеството на живот.
+                    </p>
+                    <ul class="list-check">
+                        <li><span>✓</span> Разходки и стречинг</li>
+                        <li><span>✓</span> Дихателни упражнения</li>
+                        <li><span>✓</span> Активно възстановяване</li>
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+
+
+    <!-- HIGHLIGHT -->
+    <div class="highlight-box">
+        <strong>Важно:</strong>
+        Независимо от целта,
+        <span class="text-highlight">достатъчният прием на протеин</span>
+        е ключов за запазване на мускулната маса.
+    </div>
+
+    <!-- ХРАНЕНЕ -->
+    <section class="section nutrition-section">
+        <div class="container">
+
+            <h2 class="section-title reveal">Хранене и енергиен баланс</h2>
+
+            <div class="nutrition-grid">
+
+                <article class="nutrition-card goal-cut reveal">
+                    <h3>Сваляне на килограми</h3>
+                    <ul>
+                        <li><strong>Протеин:</strong> 1.8 – 2.2 g / кг</li>
+                        <li><strong>Въглехидрати:</strong> 2 – 3 g / кг</li>
+                        <li><strong>Мазнини:</strong> 0.8 – 1 g / кг</li>
+                        <li><strong>Калории:</strong> 10–20% дефицит</li>
+                        <li><strong>Вода:</strong> 30–40 ml / кг</li>
+                    </ul>
+                </article>
+
+                <article class="nutrition-card goal-maintain reveal">
+                    <h3>Поддържане</h3>
+                    <ul>
+                        <li><strong>Протеин:</strong> 1.6 – 2.0 g / кг</li>
+                        <li><strong>Въглехидрати:</strong> 3 – 5 g / кг</li>
+                        <li><strong>Мазнини:</strong> 0.8 – 1.2 g / кг</li>
+                        <li><strong>Калории:</strong> Баланс</li>
+                        <li><strong>Вода:</strong> 30–35 ml / кг</li>
+                    </ul>
+                </article>
+
+                <article class="nutrition-card goal-bulk reveal">
+                    <h3>Качване на килограми</h3>
+                    <ul>
+                        <li><strong>Протеин:</strong> 1.6 – 2.0 g / кг</li>
+                        <li><strong>Въглехидрати:</strong> 4 – 6 g / кг</li>
+                        <li><strong>Мазнини:</strong> 1 – 1.2 g / кг</li>
+                        <li><strong>Калории:</strong> 5–15% излишък</li>
+                        <li><strong>Вода:</strong> ≥ 35 ml / кг</li>
+                    </ul>
+                </article>
+
+            </div>
+        </div>
     </section>
+
 </main>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; 2025 FitLife Bulgaria. Всички права запазени.</p>
+<footer class="footer">
+    <div class="container footer-inner">
+        <p>© 2025 FitLife </p>
     </div>
 </footer>
-<script src="../js/scripts.js"></script>
+
+<script src="script.js" defer></script>
 </body>
 </html>

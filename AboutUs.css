@@ -1,0 +1,61 @@
+/* =====================================================
+   ABOUT PAGE – Q&A STYLE
+===================================================== */
+
+.qa-wrapper {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* Заглавие */
+.qa-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+/* Q&A елемент */
+.qa-item {
+    margin-bottom: 2.2rem;
+    padding-left: 1.2rem;
+    border-left: 4px solid var(--accent);
+}
+
+.qa-item h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    color: var(--white);
+}
+
+.qa-item p {
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+/* Акценти */
+.qa-item strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* GitHub линк */
+.qa-item a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.qa-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .qa-title {
+        font-size: 2rem;
+    }
+
+    .qa-item h2 {
+        font-size: 1.25rem;
+    }
+}
