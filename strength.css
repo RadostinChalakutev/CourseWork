@@ -1,6 +1,4 @@
-/* =====================================================
-   SPLIT HEADINGS — по-разпознаваеми заглавия
-===================================================== */
+
 
 .card h3 {
     position: relative;
@@ -17,7 +15,7 @@
     border-radius: 10px;
 }
 
-/* Accent линия отляво */
+
 .card h3::before {
     content: "";
     position: absolute;
@@ -30,7 +28,7 @@
     border-radius: 4px;
 }
 
-/* Лека икона (универсална) */
+
 .card h3::after {
     content: "🏋️";
     position: absolute;
@@ -41,7 +39,7 @@
     opacity: 0.85;
 }
 
-/* По-добра четимост на мобилни */
+
 @media (max-width: 480px) {
     .card h3 {
         font-size: 1.2rem;

@@ -71,12 +71,12 @@ img {
     gap: 0.4rem;
     font-weight: bold;
 }
-/* Глобален размер на логото */
+
 .logo img {
     width: 38px;
     height: 38px;
     object-fit: cover;
-    border-radius: 50%; /* само ако искаш кръгло лого */
+    border-radius: 50%;
 }
 
 
@@ -99,12 +99,12 @@ img {
     opacity: 1;
 }
 
-/* Burger menu */
+
 .burger {
     display: none;
 }
 
-/* -------------------- FOOTER -------------------- */
+
 
 .footer {
     padding: 2rem 0;
@@ -119,7 +119,7 @@ img {
     flex-wrap: wrap;
 }
 
-/* -------------------- BUTTONS -------------------- */
+
 
 .btn {
     padding: 0.8rem 1.4rem;
@@ -149,7 +149,7 @@ img {
     color: #000;
 }
 
-/* -------------------- SCROLL REVEAL -------------------- */
+
 
 .reveal {
     opacity: 0;

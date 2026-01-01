@@ -1,8 +1,4 @@
-/* =====================================================
-   CARDIO PAGE
-===================================================== */
 
-/* HERO */
 .page-hero {
     max-width: 760px;
     margin: 0 auto 3rem;
@@ -19,14 +15,14 @@
     opacity: 0.9;
 }
 
-/* GRID */
+
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
-/* CARD */
+
 .card {
     background: var(--bg2);
     padding: 2rem;
@@ -35,7 +31,7 @@
     box-shadow: 0 12px 30px var(--shadow);
 }
 
-/* LIST */
+
 .list-check {
     list-style: none;
     padding: 0;
@@ -45,7 +41,7 @@
     color: var(--accent);
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 600px) {
     .page-hero h1 {
         font-size: 2rem;

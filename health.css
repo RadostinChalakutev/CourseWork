@@ -1,4 +1,4 @@
-/* HERO */
+
 .page-hero {
     text-align: center;
     max-width: 760px;
@@ -17,7 +17,7 @@
     margin-bottom: 1rem;
 }
 
-/* GRID */
+
 .grid-3,
 .nutrition-grid {
     display: grid;
@@ -25,7 +25,7 @@
     gap: 2rem;
 }
 
-/* CARD */
+
 .card,
 .nutrition-card {
     background: var(--bg2);
@@ -35,7 +35,7 @@
     box-shadow: 0 12px 30px var(--shadow);
 }
 
-/* LIST */
+
 .list-check {
     list-style: none;
     padding: 0;
@@ -45,7 +45,6 @@
     color: var(--accent);
 }
 
-/* HIGHLIGHT BOX */
 .highlight-box {
     max-width: 860px;
     margin: 3rem auto;
@@ -55,7 +54,7 @@
     border-radius: 14px;
 }
 
-/* INLINE */
+
 .text-highlight {
     color: var(--accent);
     font-weight: 600;
@@ -64,7 +63,7 @@
     border-radius: 6px;
 }
 
-/* GOAL BADGES */
+
 .nutrition-card { position: relative; }
 
 .nutrition-card::after {
